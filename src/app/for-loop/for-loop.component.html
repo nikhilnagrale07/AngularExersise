@@ -1,0 +1,16 @@
+<p>for-loop works!</p>
+
+<p *ngFor="let bday of bdays;">  
+    <span>{{bday.name}}</span>  
+    <span>{{bday.bDate}}</span>  
+</p>  
+
+
+<select>  
+    <option *ngFor="let bday of bdays;" [value]="bday.name">{{bday.name}}</option>  
+</select>  
+<div class='row' [ngSwitch]>  
+    <div *ngSwitchCase="'rahul jam'">Tom is Pressed</div>  
+    <div *ngSwitchCase="'Joy'">Joy is Selected</div>  
+    <div *ngSwitchDefault>Default Option</div>  
+</div>
